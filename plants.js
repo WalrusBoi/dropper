@@ -54,6 +54,8 @@ finishPlt = [
 text = {
     death: new component("30px", "Ariel", "blue", 5, 30, "text", "Deaths " + deathCount),
     level: new component("30px", "Ariel", "blue", 120, 30, "text", "Level " + level),
+    arrowkeys: new component("30px", "Ariel", "blue", 300, 30, "text", "Arrow keys to move"),
+
     // if (levelStartup == true) {
     //     setTimeout(function(){ beforePlay }, 1000);
     //     beforePlay = [new component("30px", "Ariel", "blue", 620, 310, "text", "3"),
@@ -453,6 +455,7 @@ console.log(timeBeforeStart)
     }
     text.death.update();
     text.level.update();
+    text.arrowkeys.update();
 }
     if(levelStartup == true) {
     text.beforePlay.update();
